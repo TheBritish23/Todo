@@ -1,6 +1,6 @@
 # _To-Do List_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _{Brief description of application}, 8/29/2019_
 
 #### By _By Soroush Azizi_
 
@@ -11,12 +11,9 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 ## Setup/Installation Requirements
 
 * _Git_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _Atom_
+* _CSS_
+* _Javascript_
 
 ## Known Bugs
 
