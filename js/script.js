@@ -10,8 +10,18 @@ List.prototype.listAll = function() {
   })
 }
 
+//business logic for Topics
+function Topics(){
 
-//user interface logic for Topics
+}
+
+Topics.prototype.getTopics = function() {
+  return ""
+}
+
+
+//user interface logic for Todo
 $(document).ready(function() {
   $("form#next").submit(function(event) {
     event.preventDefault()
+    var myList = new List();
