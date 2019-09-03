@@ -16,7 +16,7 @@ function Topics(){
 }
 
 Topics.prototype.getTopics = function() {
-  return ""
+  return "<div class='card'><div class='topics'>" + this."
 }
 
 
@@ -25,3 +25,4 @@ $(document).ready(function() {
   $("form#next").submit(function(event) {
     event.preventDefault()
     var myList = new List();
+    $("next").val("");
