@@ -11,12 +11,12 @@ List.prototype.listAll = function() {
 }
 
 //business logic for Topics
-function Topics(){
-
+function Topics(objective){
+ this.objective = objective;
 }
 
 Topics.prototype.getTopics = function() {
-  return "<div class='card'><div class='topics'>" + this."
+  return "<div class='card'><div class='topics'>" + this.objective + "</div>";
 }
 
 
@@ -25,4 +25,12 @@ $(document).ready(function() {
   $("form#next").submit(function(event) {
     event.preventDefault()
     var myList = new List();
+    var objective = $('#objective').val()
     $("next").val("");
+    myList.what.push(myTopics);
+    myList.listAll();
+    $(".place").click(function(){
+    })
+    })
+
+  });

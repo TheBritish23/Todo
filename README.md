@@ -33,6 +33,14 @@ _Spec 1: Task can be checked off_
  _input: Do homework_
  _output: "checked"_
 
+_Spec 2: Input is displayed_
+  _input: homework_
+  _output: "homework"_
+
+_Spec 3: Does not accept numbers_
+  _input: 4_
+  _output: "4"_
+
 ### License
 
 MIT License
