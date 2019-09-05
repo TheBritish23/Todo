@@ -3,6 +3,17 @@ function List() {
   this.what = []
 }
 
+function Check() {
+  var checkBox = document.Done("myCheck");
+  var text = document.Done("text");
+
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
 List.prototype.listAll = function() {
   $("#output").empty();
   this.what.forEach(function(place){
@@ -26,7 +37,8 @@ $(document).ready(function() {
     event.preventDefault()
     var myList = new List();
     var objective = $('#objective').val()
-    $("next").val("");
+    var myTopics = new Topics(objective);
+    $("next").val(" ");
     myList.what.push(myTopics);
     myList.listAll();
     $(".place").click(function(){
