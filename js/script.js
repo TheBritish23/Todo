@@ -36,9 +36,9 @@ $(document).ready(function() {
   $("form#next").submit(function(event) {
     event.preventDefault()
     var myList = new List();
-    var objective = $('#objective').val()
+    var objective = $('#location').val()
     var myTopics = new Topics(objective);
-    $("next").val(" ");
+    $("#location").val(" ");
     myList.what.push(myTopics);
     myList.listAll();
     $(".place").click(function(){
