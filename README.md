@@ -17,7 +17,7 @@ _Using constructers and prototypes to create a to-do list that allows you to add
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_You have reload the page to do it over._
 
 ## Support and contact details
 
@@ -25,7 +25,8 @@ _email.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_I copied a lot from the previous assignment to here. Using css, I created an application that allows
+you to cross off a topic. Also like last time, the input is displayed when entered._
 
 ## Specs
 
@@ -40,6 +41,10 @@ _Spec 2: Input is displayed_
 _Spec 3: Does not accept numbers_
   _input: 4_
   _output: "4"_
+
+_Spec 4: Can be crossed out when clicked_
+  _input: sure_
+  _output: "sure" (pretend it's crossed out)_
 
 ### License
 
