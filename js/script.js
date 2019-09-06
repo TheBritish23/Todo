@@ -3,17 +3,6 @@ function List() {
   this.what = []
 }
 
-function Check() {
-  var checkBox = document.Done("myCheck");
-  var text = document.Done("text");
-
-  if (checkBox.checked == true){
-    text.style.display = "block";
-  } else {
-    text.style.display = "none";
-  }
-}
-
 List.prototype.listAll = function() {
   $("#output").empty();
   this.what.forEach(function(place){
@@ -33,16 +22,16 @@ Topics.prototype.getTopics = function() {
 
 //user interface logic for Todo
 $(document).ready(function() {
+  var myList = new List();
   $("form#next").submit(function(event) {
     event.preventDefault()
-    var myList = new List();
     var objective = $('#location').val()
     var myTopics = new Topics(objective);
     $("#location").val(" ");
     myList.what.push(myTopics);
     myList.listAll();
-    $(".place").click(function(){
+      $(".topics").click(function() {
+        $(this).toggleClass("strikethrough")
+      })
     })
-    })
-
   });
